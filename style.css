@@ -11,7 +11,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    background: rgb(15, 15, 15);
+    background: rgb(19, 18, 18);
     justify-content: center;
     align-items: center;
 }
@@ -20,8 +20,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 500px;
-    background: #eaebe3;
+    height: 520px;
+    background: #0ba18c;
     margin-top: 70px;
     border-radius: 10px;
     font-size: 14px;
@@ -31,7 +31,7 @@ body {
 
 h1 {
     margin-top: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
     margin-left: -40px;
 }
@@ -39,19 +39,20 @@ h1 {
 #name,
 #email,
 #password,
-#cpf,
+#login,
 #tel {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 
 }
 
 label {
-
+    font-size: medium;
     font-weight: bold;
 }
 
 input {
     width: 90%;
+    height: 30px;
     font-size: 15px;
     border: #ccc solid 2px;
     border-radius: 5px;
@@ -59,11 +60,14 @@ input {
 
 #sexo {
     width: 90%;
-    height: 25px;
+    height: 30px;
     font-size: 1.0rem;
     border: 2px #ccc solid;
     border-radius: 5px;
+    margin-bottom: 2px;
+ 
 }
+
 /*borda interna*/
 #btn {
     background: linear-gradient(rgb(17, 16, 16), black) padding-box, linear-gradient(to right, #5adb94, #0ba18c, #368986) border-box;
@@ -78,17 +82,100 @@ input {
     color: #a4e018;
     padding: 0.1em 1.0em;
     cursor: pointer;
-    width: 40px;
-    height: 20px;
+    width: 70px;
+    height: 40px;
     transition: 0.6s;
     margin-left: 1px;
+    text-align: center;
+    padding-top: 10px;
+
+    
 }
 
 #btn:hover {
     background: linear-gradient(rgb(148, 157, 163), black) padding-box, linear-gradient(to right, #131815, #0ba18c, #368986) border-box;
 }
+
 /*borda externa*/
 .btn1 {
+    background: linear-gradient(rgb(20, 19, 19), black) padding-box, linear-gradient(to right, #5adb94, #0ba18c, #368986) border-box;
+    border-radius: 80%;
+    border: 5px solid transparent;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    width: 90px;
+    height: 60px;
+    transition: 0.6s;
+    margin-left: 110px;
+    margin-top: 10px;
+   }
+
+.btn1:hover {
+    background: linear-gradient(rgb(193, 212, 223), black) padding-box, linear-gradient(to right, #b31515, #0ba18c, #a0360c) border-box;
+}
+
+
+/*                                 tela de Login                      */
+h2 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: -5px;
+}
+
+#form1 {
+    width: 300px;
+    height: 300px;
+    background-color: #0ba18c;
+    margin: 180px auto;
+    text-align: center;
+    padding: 25px;
+    border-radius: 50%;
+    
+}
+
+/*Login */
+.mover span{
+    position: absolute;
+    left: 570px;
+    top: 285px;
+    transition: 0.5s;
+    opacity: .3;
+    pointer-events: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.mover input:focus ~ span,
+.mover input:valid ~ span{
+    transform: translateY(-25px);
+    font-size: 14px;
+    opacity: 1;
+}
+
+/*Senha */
+.mover1 span{
+    position: absolute;
+    left: 570px;
+    top: 320px;
+    transition: 0.5s;
+    opacity: .3;
+    pointer-events: none;
+    margin-bottom: 5px;
+}
+
+.mover1 input:focus ~ span,
+.mover1 input:valid ~ span{
+    transform:translateY(30px);
+    font-size: 14px;
+    opacity: 1;
+}
+
+
+/*borda externa*/
+.btn2 {
     background: linear-gradient(rgb(20, 19, 19), black) padding-box, linear-gradient(to right, #5adb94, #0ba18c, #368986) border-box;
     border-radius: 80%;
     border: 3px solid transparent;
@@ -99,13 +186,60 @@ input {
     color: #f1f3e6;
     padding: 0.5em 1.5em;
     cursor: pointer;
-    width: 60px;
-    height: 40px;
+    width: 90px;
+    height: 60px;
     transition: 0.6s;
-    margin-left: 130px;
-    margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
 }
 
-.btn1:hover {
+
+.btn2:hover {
     background: linear-gradient(rgb(193, 212, 223), black) padding-box, linear-gradient(to right, #b31515, #0ba18c, #a0360c) border-box;
+}
+
+
+#btn3 {
+    background: linear-gradient(rgb(20, 19, 19), black) padding-box, linear-gradient(to right, #5adb94, #0ba18c, #368986) border-box;
+    border-radius: 80%;
+    border: 3px solid transparent;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    color: #f1f3e6;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    width: 70px;
+    height: 40px;
+    transition: 0.6s;
+    margin-left: 0px;
+    margin-top: -1px;
+}
+
+#btn3:hover {
+    background: linear-gradient(rgb(42, 238, 140), black) padding-box, linear-gradient(to right, #131815, #0ba18c, #368986) border-box;
+}
+
+#btn4 {
+    background: linear-gradient(rgb(20, 19, 19), black) padding-box, linear-gradient(to right, #5adb94, #0ba18c, #368986) border-box;
+    border-radius: 80%;
+    border: 3px solid transparent;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    color: #f1f3e6;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    width: 70px;
+    height: 40px;
+    transition: 0.6s;
+    margin-left: 0px;
+    margin-top: -1px;
+}
+
+
+#btn4:hover {
+    background: linear-gradient(rgb(42, 238, 140), black) padding-box, linear-gradient(to right, #131815, #0ba18c, #368986) border-box;
 }
