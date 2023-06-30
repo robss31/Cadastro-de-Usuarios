@@ -11,7 +11,8 @@ form1.addEventListener("submit", (event) => {
 
     if ((login.value === Login) && (senha.value === Senha )) {
 
-        window.location.replace("http://127.0.0.1:5500/boasVinda.html")
+        window.location.replace("http://127.0.0.1:5500/boasVinda.html");
+        https://robss31.github.io/Cadastro-de-Usuarios/boasVindas.html
         //form1.submit();
         return;
 
@@ -23,5 +24,7 @@ form1.addEventListener("submit", (event) => {
 });
 
 function cadastrar(){
-    window.location.replace("http://127.0.0.1:5500/Cadastro.html")
+    window.location.replace("http://127.0.0.1:5500/Cadastro.html");
+    https://robss31.github.io/Cadastro-de-Usuarios/Cadastro.html;
+    
 }
