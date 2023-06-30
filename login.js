@@ -25,6 +25,6 @@ form1.addEventListener("submit", (event) => {
 
 function cadastrar(){
     window.location.replace("http://127.0.0.1:5500/Cadastro.html");
-    https://robss31.github.io/Cadastro-de-Usuarios/Cadastro.html;
+    window.location.replace("https://robss31.github.io/Cadastro-de-Usuarios/Cadastro.html");
     
 }
