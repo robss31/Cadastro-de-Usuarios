@@ -11,8 +11,8 @@ form1.addEventListener("submit", (event) => {
 
     if ((login.value === Login) && (senha.value === Senha )) {
 
-        window.location.replace("http://127.0.0.1:5500/boasVinda.html");
-        https://robss31.github.io/Cadastro-de-Usuarios/boasVindas.html
+        //window.location.replace("http://127.0.0.1:5500/boasVinda.html");
+        window.location.replace("https://robss31.github.io/Cadastro-de-Usuarios/boasVindas.html");
         //form1.submit();
         return;
 
