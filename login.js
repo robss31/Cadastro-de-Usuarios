@@ -11,8 +11,8 @@ form1.addEventListener("submit", (event) => {
 
     if ((login.value === Login) && (senha.value === Senha )) {
 
-        alert("Seja Bem Vindo");
-        form1.submit();
+        window.location.replace("http://127.0.0.1:5500/boasVinda.html")
+        //form1.submit();
         return;
 
     } else {

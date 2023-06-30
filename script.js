@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
         return;
 
     } else {
-        alert("Deus é maior");
+        //alert("Deus é maior");
 
         localStorage.setItem("Nome", inputname.value);
         localStorage.setItem("Email", inputemail.value);
