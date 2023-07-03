@@ -140,7 +140,7 @@ h2 {
 /*Login */
 .mover span{
     position: absolute;
-    left: 330px;
+    left: 430px;
     top: 285px;
     transition: 0.5s;
     opacity: .3;
@@ -158,7 +158,7 @@ h2 {
 /*Senha */
 .mover1 span{
     position: absolute;
-    left: 330px;
+    left: 430px;
     top: 320px;
     transition: 0.5s;
     opacity: .3;
