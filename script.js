@@ -18,7 +18,7 @@ form.addEventListener("submit", (event) => {
         //alert("Deus é maior");
 
         localStorage.setItem("Nome", inputname.value);
-        //localStorage.setItem("Email", inputemail.value);
+        localStorage.setItem("Email", inputemail.value);
         localStorage.setItem("Login", inputlogin.value);
         localStorage.setItem("Senha", inputsenha.value);
         localStorage.setItem("Telefone", inputtel.value);
